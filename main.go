@@ -2,11 +2,9 @@ package main
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/swagger"
 	"github.com/golang-jwt/jwt/v5"
 
 	jwtware "github.com/gofiber/contrib/jwt"
-	_ "github.com/noirrs/fibergo-example/docs"
 )
 
 var users = [][]string{
@@ -41,7 +39,6 @@ func main() {
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.SendString("Hello, World 👋!")
 	})
-	app.Get("/swagger/*", swagger.HandlerDefault)
 
 	v2 := app.Group("/v2")
 
