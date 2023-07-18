@@ -6,7 +6,7 @@ import (
 	"github.com/golang-jwt/jwt/v5"
 
 	jwtware "github.com/gofiber/contrib/jwt"
-
+	_ "github.com/noirrs/fibergo-example/docs"
 )
 
 var users = [][]string{
