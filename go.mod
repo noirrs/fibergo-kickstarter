@@ -1,4 +1,4 @@
-module sola.noir.land/v2
+module fibergo-example
 
 go 1.19
 
