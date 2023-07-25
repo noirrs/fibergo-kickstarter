@@ -6,15 +6,15 @@
 
 # 🦾 Features
   
--[] using Fibergo
+- using Fibergo
 
--[] explanations for function and instances
+- explanations for function and instances
 
--[] MongoDB connection
+- MongoDB connection
 
--[] JWT authentication
+- JWT authentication
 
--[] Perfect structure
+- Perfect structure
 
 
   
@@ -22,16 +22,24 @@
 # ✍️ Repository Structure 
 
 ```
-├─ .gitignore
+├─ controllers
+│  ├─ middleware.go
+│  └─ controller.go
+├─ database
+│  ├─ load_preferences.go
+│  └─ connect.go
+├─ services
+│  ├─ register.go
+│  ├─ login.go
+│  └─ app.go
+├─ types
+│  └─ types.go
 ├─ README.md
-├─ category.go
-├─ config.json
-├─ connect.go
 ├─ go.mod
 ├─ go.sum
-├─ handlerFuncs.go
-├─ main.go
-└─ service.go
+├─ lib.json
+└─ main.go
+
 ```
 
 # 🔗 Resources
@@ -40,7 +48,7 @@
 
 [Mongo Driver](https://pkg.go.dev/go.mongodb.org/mongo-driver@v1.11.1)
 
-[Gin](https://pkg.go.dev/github.com/gin-gonic/gin@v1.8.1)
+[GoFiber](https://gofiber.io/)
 
 [MongoDB](https://www.mongodb.com/)
 
