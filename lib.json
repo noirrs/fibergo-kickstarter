@@ -1,0 +1,7 @@
+{
+	"version": "0.1",
+	"status": "alpha",
+	"dbname": "fibergo-kickstarter",
+	"port": "3000",
+	"connURL": "mongodb://localhost:27017"
+}
